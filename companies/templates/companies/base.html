@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- META SECTION -->
+        <title>{% block title %}Dolby Agency{% endblock %}</title>
+        {% load staticfiles %}
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <!-- END META SECTION -->
+
+
+        <link rel="stylesheet" type="text/css" href="{% static 'companies/css/revolution-slider/extralayers.css' %}" media="screen" />
+        <link rel="stylesheet" type="text/css" href="{% static 'companies/css/revolution-slider/settings.css' %}" media="screen" />
+        <link rel="stylesheet" type="text/css" href="{% static 'companies/css/bootstrap/bootstrap.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'companies/css/styles.css' %}" media="screen" />
+
+    </head>
+    <body>
+        <!-- page container -->
+        <div class="page-container">
+
+            <!-- page header -->
+            <div class="page-header">
+
+                <!-- page header holder -->
+                <div class="page-header-holder">
+
+                    <!-- page logo -->
+                    <div class="logo">
+                         <a href="{% url "companies:index" %}">Dolby Agency</a>
+
+
+
+                    </div>
+                    <!-- ./page logo -->
+
+
+                    <!-- search -->
+                    <div class="search">
+                        <div class="search-button"><span class="fa fa-search"></span></div>
+                        <div class="search-container animated fadeInDown">
+                            <form action="#" method="post">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search..."/>
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-primary"><span class="fa fa-search"></span></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- ./search -->
+
+                    <!-- nav mobile bars -->
+                    <div class="navigation-toggle">
+                        <div class="navigation-toggle-button"><span class="fa fa-bars"></span></div>
+                    </div>
+                    <!-- ./nav mobile bars -->
+
+                    <!-- navigation -->
+                    <ul class="navigation">
+                        <li>
+                            <a href="{% url 'companies:index' %}">HOME</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'companies:services' %}">SERVICES</a>
+
+                        </li>
+                        <li>
+                            <a href="{% url 'companies:aboutUs' %}">ABOUT US</a>
+                        </li>
+
+                        <li>
+                            <a href="{% url 'companies:myBlog' %}">BLOG</a>
+                        </li>
+                        <li>
+                            <a href="{% url "companies:contacts"%}">CONTACT US</a>
+
+                        </li>
+                    </ul>
+                    <!-- ./navigation -->
+
+
+                </div>
+                <!-- ./page header holder -->
+
+            </div>
+            <!-- ./page header -->
+            {% block body %}
+            {% endblock %}
+
+            <!-- page footer -->
+            <div class="page-footer">
+
+                <!-- page footer wrap -->
+                <div class="page-footer-wrap bg-dark-gray">
+                    <!-- page footer holder -->
+                    <div class="page-footer-holder page-footer-holder-main">
+
+                        <div class="row">
+
+                            <!-- about -->
+                            <div class="col-md-3">
+                                <h3 style="color: orangered">ABOUT DOLBY AGENCY</h3>
+                                <small  style="color: #3e74ff"><strong><i>Your Digital Marketing Partner</i></strong></small>
+                                <p>
+                                    Dolby Agency is a full service Digital Marketing and Media Agency that make<strong style="color: #3e74ff"> Memorable, Wow, Top of Mind</strong> marketing campaigns in the digital space.
+                                </p>
+
+                                <!-- social links -->
+                                <div class="social-links">
+                                    <ol>
+                                        <a href="#"><span class="fa fa-facebook"></span></a>
+                                        <a href="#"><span class="fa fa-twitter"></span></a>
+                                        <a href="#"><span class="fa fa-pinterest"></span></a>
+                                        <a href="#"><span class="fa fa-linkedin"></span></a>
+                                        <a href="#"><span class="fa fa-youtube"></span></a>
+                                    </ol>
+
+                                </div>
+                            </div>
+                            <!-- ./about
+                             -->
+
+                            <!-- quick links -->
+                            <div class="col-md-3">
+                                <h3>Quick links</h3>
+
+                                <div class="list-links">
+                                    <a href="{% url 'companies:index' %}">HOME</a>
+                                    <a href="{% url 'companies:services' %}">SERVICES</a>
+                                    <a href="{% url 'companies:aboutUs' %}">COMPANY</a>
+                                    <a href="{% url 'companies:myBlog' %}">MY BLOG</a>
+                                    <a href="{% url 'companies:contacts' %}">CONTACT US</a>
+                                </div>
+                            </div>
+                            <!-- ./quick links -->
+
+                            <!-- recent tweets -->
+                            <div class="col-md-3">
+                                <h3>LATEST NEWS</h3>
+
+                                <div class="list-with-icon small">
+                                    <div class="item">
+                                        <div class="icon">
+                                            <span class="fa fa-twitter"></span>
+                                        </div>
+                                        <div class="text">
+                                            <a href="#">@JohnDoe</a> Hello, here is my new front-end template. Check it out
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="icon">
+                                            <span class="fa fa-twitter"></span>
+                                        </div>
+                                        <div class="text">
+                                            <a href="#">@Aqvatarius</a> Release of new update for Atlant is done and ready to use
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="icon">
+                                            <span class="fa fa-twitter"></span>
+                                        </div>
+                                        <div class="text">
+                                            <a href="#">@Aqvatarius</a> Check out my new admin template Atlant, it's realy awesome template
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- ./recent tweets -->
+
+                            <!-- contacts -->
+                            <div class="col-md-3">
+                                <h3>CONTACTS</h3>
+
+                                <div class="footer-contacts">
+                                    <div class="fc-row">
+                                        <span class="fa fa-home"></span>
+                                        7601-00100, Cathy Flats,<br/>
+                                        Lenana Road, Nairobi,<br/>
+                                        Kenya.
+                                    </div>
+                                    <div class="fc-row">
+                                        <span class="fa fa-phone"></span>
+                                        (+254) 713-614-056
+                                    </div>
+                                    <div class="fc-row">
+                                        <span class="fa fa-envelope"></span>
+                                        <strong>Dolby Agency</strong><br>
+                                        <a href="mailto:#">info@dolbyagency.com</a>
+                                    </div>
+                                    <div class="fc-row">
+                                        <span class="fa fa-envelope"></span>
+                                        <strong>Dolby Agency</strong><br>
+                                        <a href="mailto:">brian@dolbyagency.com</a>
+                                    </div>
+                                </div>
+
+                        <!-- ./social links -->
+
+                                <h3>Subscribe</h3>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Your email"/>
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-primary"><span class="fa fa-paper-plane"></span></button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- ./contacts -->
+
+                        </div>
+
+                    </div>
+                    <!-- ./page footer holder -->
+                </div>
+                <!-- ./page footer wrap -->
+
+                <!-- page footer wrap -->
+                <div class="page-footer-wrap bg-darken-gray">
+                    <!-- page footer holder -->
+                    <div class="page-footer-holder">
+
+                        <!-- copyright -->
+                        <div class="copyright">
+                            Dolby Agency &copy; 2017 by a2Z Solutions & Consultancy <a href="#">a2Z</a> | All Rights Reserved
+                        </div>
+                        <!-- ./copyright -->
+
+                    </div>
+                    <!-- ./page footer holder -->
+                </div>
+                <!-- ./page footer wrap -->
+
+            </div>
+            <!-- ./page footer -->
+
+        </div>
+        <!-- ./page container -->
+
+        <!-- page scripts -->
+        <script type="text/javascript" src="{% static 'companies/js/plugins/jquery/jquery.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'companies/js/plugins/bootstrap/bootstrap.min.js' %}"></script>
+
+        <script type="text/javascript" src="{% static 'companies/js/plugins/mixitup/jquery.mixitup.js' %}"></script>
+        <script type="text/javascript" src="{% static 'companies/js/plugins/appear/jquery.appear.js' %}"></script>
+
+        <script type="text/javascript" src="{% static 'companies/js/plugins/revolution-slider/jquery.themepunch.tools.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'companies/js/plugins/revolution-slider/jquery.themepunch.revolution.min.js' %}"></script>
+
+        <script type="text/javascript" src="{% static 'companies/js/actions.js' %}"></script>
+        <script type="text/javascript" src="{% static 'companies/js/slider.js' %}"></script>
+
+        <!-- ./page scripts -->
+    </body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,128 @@
+{% extends 'companies/base.html' %} <!-- META SECTION -->
+<html>
+<head>
+{% load staticfiles %}
+{% block title %}Services | Dolby Agency{% endblock %}
+</head>
+<body>
+{% block body %}
+ <!-- page container -->
+
+        <div class="page-container">
+
+            
+            <!-- ./page header -->
+
+            <!-- page content -->
+            <div class="page-content">
+
+                <!-- page content wrapper -->
+                <div class="page-content-wrap bg-light">
+                    <!-- page content holder -->
+                    <div class="page-content-holder no-padding">
+                        <!-- page title -->
+                        <div class="page-title">
+                            <!-- breadcrumbs -->
+                             <ul class="breadcrumb">
+                                    <li><a href="{% url 'companies:index' %}">Home</a></li>
+                                    <li><a href="{% url 'companies:services' %}">Services</a></li>
+                                    <li><a href="{% url 'companies:aboutUs' %}">Company</a></li>
+                                    <li><a href="{% url 'companies:myBlog' %}">My Blog</a></li>
+                                    <li><a href="{% url 'companies:contacts' %}">Contact Us</a></li>
+                                    <li class="active">Services</li>
+                             </ul>
+                            <!-- ./breadcrumbs -->
+                        </div>
+                        <!-- ./page title -->
+                    </div>
+                    <!-- ./page content holder -->
+                </div>
+                <!-- ./page content wrapper -->
+
+
+                <!-- page content wrapper -->
+                <div class="page-content-wrap">
+                    <!-- page content holder -->
+                    <div class="page-content-holder padding-v-30">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="blog-content">
+                                    <h3 style="color: #0096fe"> SOCIAL MEDIA MARKETING</h3>
+                                    <span class="mantra" style="color: orangered"><strong>Creating Hype. Building the Brand</strong></span>
+
+                                    <img src="{% static 'companies/css/ka/socialmedia2.png' %}" class="img-responsive" /><br />
+
+                                    <p><strong>Social Media</strong> as an innovation for the 21st Century has revolutionized marketing and turned the world in to a global village. With a click only, your product is made visible and consumers get to engage with products anywhere and anytime through mobile phones.</p>
+                                    <blockquote><p>Engage us and let’s take your business to people's home in an exciting manner. We believe through our strategic<strong> Facebook, Twitter, Instagram, Snapchat, LinkedIn, Blogging, YouTube, Messenger & Pinterest approach</strong>; results are inevitable.</p></blockquote>
+                                </div>
+
+                                <div class="blog-content">
+                                    <h2 style="color: #0096fe"><span class="fa fa-bar-chart-o"></span> CHANNEL MANAGEMENT & TRACKING</h2>
+                                     <span class="mantra" style="color: orangered">Professionalism + Expertise = ROI</span><br />
+                                    <img src="{% static 'companies/css/ka/vault/one-year-traffic.png' %}" class="img-responsive" /><br />
+                                    <p><strong>Digital marketing </strong> without the right channel, right team and strategy is like shooting aimlessly!</p>
+                                    <blockquote><p>At Dolby Agency we are driven by professionalism, expertise and data analytics. Through this we ensure our clients get the best proven strategy to work with in any marketing campaign hence ROI is guaranteed.</p></blockquote>
+                                </div>
+
+                                <div class="blog-content">
+
+                                     <h2 style="color: #0096fe"><span class="fa fa-camera"></span> MEDIA PRODUCTION</h2>
+                                     <span class="mantra" style="color: orangered">Creating content. Building brand culture</span>
+
+                                    <img src="{% static 'companies/css/ka/cell-phone-bet.png' %}" class="img-responsive" />  <br />
+                                    <p><strong>Messaging </strong>is key in any marketing campaign. At Dolby Agency, we create content that is eagerly consumable. Resonates with the brand and connects with the target audience emotionally. We believe in creating brand culture that consumers relates with and not copy paste culture. We do this through:</p>
+                                    <blockquote>
+                                        <ul>
+                                            <li>Audio-visual content</li>
+                                            <li>Photography fused with creativity</li>
+                                            <li>Videography (short clips)</li>
+                                            <li>Creative artworks</li>
+                                        </ul>
+                                    </blockquote>
+
+                                </div>
+                            </div>
+
+                        </div><!-- end row -->
+                    </div>
+                    <!-- ./page content holder -->
+                </div>
+                <!-- ./page content wrapper -->
+
+                <div class="page-content-wrap bg-light bg-texture-1">
+
+                    <div class="divider"><div class="box"><span class="fa fa-angle-down"></span></div></div>
+
+                    <!-- page content holder -->
+                    <div class="page-content-holder">
+
+                        <div class="quote this-animate" data-animate="fadeInDown">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h3 style="color: orangered">Let's connect & create Magical Marketing Campaigns! </h3>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="{% url 'companies:contacts' %}" class="btn btn-primary btn-block btn-lg">Talk to Us</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- ./page content holder -->
+                </div>
+
+            </div>
+            <!-- ./page content -->
+
+
+
+        </div>
+        <!-- ./page container -->
+
+
+
+{% endblock %}
+</body>
+</html>
+

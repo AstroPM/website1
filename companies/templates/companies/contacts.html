@@ -1,0 +1,116 @@
+
+        <!-- META SECTION -->
+        {% extends 'companies/base.html' %}
+        {% load staticfiles %}
+        {% block title %}Contact Us{% endblock %}
+        {% block body %}
+
+
+
+
+            <!-- page content -->
+            <div class="page-content" xmlns="http://www.w3.org/1999/html">
+
+                <!-- page content wrapper -->
+                <div class="page-content-wrap bg-light">
+                    <!-- page content holder -->
+                    <div class="page-content-holder no-padding">
+                        <!-- page title -->
+                        <div class="page-title">
+                            <h1>Contact Us</h1>
+                            <!-- breadcrumbs -->
+                            <ul class="breadcrumb">
+                                <li><a href="{% url 'companies:index' %}">Home</a></li>
+                                <li><a href="{% url 'companies:services' %}">Properties and Listings</a></li>
+                                <li><a href="{% url 'companies:aboutUs' %}">About Us</a></li>
+                                <li class="active">Contact Us</li>
+                            </ul>
+                            <!-- ./breadcrumbs -->
+                        </div>
+                        <!-- ./page title -->
+                    </div>
+                    <!-- ./page content holder -->
+                </div>
+                <!-- ./page content wrapper -->
+
+
+                <!-- page content wrapper -->
+                <div class="page-content-wrap">
+
+                    <div id="google-map" style="width: 100%; height: 300px;">
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.808101527796!2d36.795446514274786!3d-1.289371185992034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10ba2f048315%3A0x740543505ed6491a!2sCathy+Flats%2C+Lenana+Rd%2C+Nairobi%2C+Kenya!5e0!3m2!1sen!2sca!4v1490979038067" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                    </div>
+
+                </div>
+                <!-- ./page content wrapper -->
+
+                <!-- page content wrapper -->
+                <div class="page-content-wrap">
+
+                    <div class="divider"><div class="box"><span class="fa fa-angle-down"></span></div></div>
+
+                    <!-- page content holder -->
+                    <div class="page-content-holder">
+
+                        <div class="row">
+                            <div class="col-md-7 this-animate" data-animate="fadeInLeft">
+
+                                <div class="text-column">
+                                    <h4>Contact Us</h4>
+                                    <div class="text-column-info">
+                                        Proin luctus nulla fringilla massa euismod commodo. Donec sit amet elementum libero. Curabitur ut lorem id tellus malesuada tincidunt et eget purus.
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                {{ form.non_field_errors }}
+                                <form class="form-group" action=""  method="post" enctype="multipart/form-data">
+                                {% csrf_token %}
+                                {% include 'companies/form-template.html' %}
+                                    <div>
+                                        <button type="submit" class="btn btn-primary btn-lg pull-right">Send Message</button>
+                                    </div>
+
+                                </form>
+                                </div>
+                            </div>
+                            <div class="col-md-5 this-animate" data-animate="fadeInRight">
+
+                                <div class="text-column text-column-centralized">
+                                    <div class="text-column-icon">
+                                        <span class="fa fa-home"></span>
+                                    </div>
+                                    <h4>Our Office</h4>
+                                    <div class="text-column-info">
+                                        <p><strong><span class="fa fa-map-marker"></span> Address: </strong> 000 StreetName, Suite 111, City Name, ST 01234</p>
+                                        <p><strong><span class="fa fa-phone"></span> Phone: </strong> (012) 345-67-89</p>
+                                        <p><strong><span class="fa fa-envelope"></span> E-mail: </strong> <a href="#">johndoe@domain.com</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="text-column text-column-centralized">
+                                    <div class="text-column-icon">
+                                        <span class="fa fa-clock-o"></span>
+                                    </div>
+                                    <h4>Bussines Hours</h4>
+                                    <div class="text-column-info">
+                                        <p><strong>Monday &mdash; Friday</strong>: 10:00am - 6:00pm</p>
+                                        <p><strong>Saturday &mdash; Sunday</strong>: 10:00am - 2:00pm</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- ./page content holder -->
+                </div>
+                <!-- ./page content wrapper -->
+
+            </div>
+            <!-- ./page content -->
+        {% endblock %}
+
+
